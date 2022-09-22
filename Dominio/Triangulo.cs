@@ -22,8 +22,7 @@ public class Triangulo
 
     public bool EsTriangulo()
     {
-        return lados.OrderBy(x => x).Take(2).Sum() > lados.Max()
-            && lados.Count == 3;
+        return lados.OrderBy(x => x).Take(2).Sum() > lados.Max() && lados.Count == 3;
     }
 
     public string Tipo()
