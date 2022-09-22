@@ -1,4 +1,4 @@
-using Figura;
+using Dominio;
 
 namespace Tests;
 
@@ -33,7 +33,7 @@ public class TrianguloTests
         bool resultado = triangulo.EsTriangulo();
 
         //assert
-        Assert.Equal(resultado, false);
+        Assert.Equal(false, resultado);
     }
 
     // [Fact]
@@ -56,7 +56,7 @@ public class TrianguloTests
     {
         var triangulo = new Triangulo(a, b, c);
         var resultado = triangulo.Tipo();
-        Assert.Equal(resultado, "Equilatero");
+        Assert.Equal("Equilatero", resultado);
     }
 
     [Theory]
@@ -70,7 +70,7 @@ public class TrianguloTests
     {
         var triangulo = new Triangulo(a, b, c);
         var resultado = triangulo.Tipo();
-        Assert.Equal(resultado, "Escaleno");
+        Assert.Equal("Escaleno", resultado);
     }
 
     [Theory]
@@ -81,6 +81,6 @@ public class TrianguloTests
     {
         var triangulo = new Triangulo(a, b, c);
         var resultado = triangulo.Tipo();
-        Assert.Equal(resultado, "Isosceles");
+        Assert.Equal("Isosceles", resultado);
     }
 }

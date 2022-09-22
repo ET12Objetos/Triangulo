@@ -1,4 +1,4 @@
-namespace Figura;
+namespace Dominio;
 
 public class Triangulo
 {

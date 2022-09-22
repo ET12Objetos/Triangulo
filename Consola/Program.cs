@@ -1,4 +1,4 @@
-﻿using Figura;
+﻿using Dominio;
 
 Console.WriteLine("Ingrese un numero:");
 int lado1 = Convert.ToInt32(Console.ReadLine());
