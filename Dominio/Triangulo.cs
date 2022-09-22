@@ -20,10 +20,8 @@ public class Triangulo
             System.Console.WriteLine("Los lados ingresados no forman un triangulo");
     }
 
-    public bool EsTriangulo()
-    {
-        return lados.OrderBy(x => x).Take(2).Sum() > lados.Max() && lados.Count == 3;
-    }
+    public bool EsTriangulo() =>
+        lados.OrderBy(x => x).Take(2).Sum() > lados.Max() && lados.Count == 3;
 
     public string Tipo()
     {
